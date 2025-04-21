@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { WalletConnect } from './components/WalletConnect'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,11 @@ function App() {
         </a>
       </div>
       <h1>Dairy Frontend</h1>
+      
+      <div className="wallet-section">
+        <WalletConnect />
+      </div>
+      
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

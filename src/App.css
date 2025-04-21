@@ -40,3 +40,40 @@
 .read-the-docs {
   color: #888;
 }
+
+.wallet-section {
+  margin: 2em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.connected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.disconnect-btn {
+  padding: 0.5em 1em;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: transparent;
+  color: #646cff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.disconnect-btn:hover {
+  background: #646cff;
+  color: white;
+}
