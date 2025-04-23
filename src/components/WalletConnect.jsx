@@ -1,4 +1,5 @@
 import { useAccount, useDisconnect, useEnsName } from 'wagmi'
+import { TestCoinBalance } from './TestCoinBalance'
 
 export function WalletConnect() {
   const { address, isConnected } = useAccount()
@@ -9,7 +10,8 @@ export function WalletConnect() {
     return (
       <div className="wallet-info">
         <div className="connected">
-          <span>Connected to {ensName || address}</span>
+          <span>Connected to {ensName || `${address?.slice(0, 6)}...${address?.slice(-4)}`}</span>
+          <TestCoinBalance />
           <button onClick={() => disconnect()} className="disconnect-btn">
             Disconnect
           </button>

@@ -77,3 +77,39 @@
   background: #646cff;
   color: white;
 }
+
+.token-balance {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 6px;
+  background: rgba(100, 108, 255, 0.1);
+  border: 1px solid rgba(100, 108, 255, 0.3);
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.balance-label {
+  font-size: 0.9em;
+  color: #888;
+  font-weight: 500;
+}
+
+.balance-amount {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #646cff;
+}
+
+.token-balance.error {
+  background: rgba(255, 100, 100, 0.1);
+  border-color: rgba(255, 100, 100, 0.3);
+}
+
+.token-balance.error .balance-amount {
+  color: #ff6464;
+}
