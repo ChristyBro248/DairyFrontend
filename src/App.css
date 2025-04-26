@@ -113,3 +113,194 @@
 .token-balance.error .balance-amount {
   color: #ff6464;
 }
+
+/* Token Query Section */
+.token-query-section {
+  margin: 2em 0;
+}
+
+.token-query {
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.token-query h3 {
+  margin: 0 0 1.5em 0;
+  color: #646cff;
+  text-align: center;
+}
+
+.query-input-section {
+  margin-bottom: 1.5em;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.token-input {
+  padding: 12px 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.token-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.token-input.invalid {
+  border-color: #ff6464;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.query-btn, .clear-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid;
+}
+
+.query-btn {
+  background: #646cff;
+  color: white;
+  border-color: #646cff;
+}
+
+.query-btn:hover:not(:disabled) {
+  background: #5854eb;
+}
+
+.query-btn:disabled {
+  background: #666;
+  border-color: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.clear-btn {
+  background: transparent;
+  color: #888;
+  border-color: #888;
+}
+
+.clear-btn:hover {
+  background: #888;
+  color: white;
+}
+
+.error-message, .warning-message {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.error-message {
+  background: rgba(255, 100, 100, 0.1);
+  color: #ff6464;
+  border: 1px solid rgba(255, 100, 100, 0.3);
+}
+
+.warning-message {
+  background: rgba(255, 200, 100, 0.1);
+  color: #ffb366;
+  border: 1px solid rgba(255, 200, 100, 0.3);
+}
+
+.query-results {
+  margin-top: 1.5em;
+  padding: 1.5em;
+  border-radius: 8px;
+  background: rgba(100, 108, 255, 0.05);
+  border: 1px solid rgba(100, 108, 255, 0.2);
+}
+
+.loading {
+  text-align: center;
+  color: #646cff;
+  font-style: italic;
+}
+
+.error {
+  text-align: center;
+  color: #ff6464;
+}
+
+.token-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.token-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(100, 108, 255, 0.2);
+}
+
+.token-name {
+  font-size: 18px;
+  color: #646cff;
+  text-align: center;
+}
+
+.token-address {
+  font-size: 12px;
+  color: #888;
+  word-break: break-all;
+  text-align: center;
+}
+
+.balance-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.balance-label {
+  font-size: 14px;
+  color: #888;
+}
+
+.balance-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #646cff;
+}
+
+@media (max-width: 600px) {
+  .token-query {
+    padding: 1.5em;
+  }
+  
+  .input-group {
+    gap: 0.8em;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+}
